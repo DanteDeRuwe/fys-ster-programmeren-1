@@ -1,0 +1,192 @@
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<style type="text/css">
+.hll { background-color: #ffffcc }
+.c { color: #888888 } /* Comment */
+.err { color: #FF0000; background-color: #FFAAAA } /* Error */
+.k { color: #008800; font-weight: bold } /* Keyword */
+.o { color: #333333 } /* Operator */
+.cm { color: #888888 } /* Comment.Multiline */
+.cp { color: #557799 } /* Comment.Preproc */
+.c1 { color: #888888 } /* Comment.Single */
+.cs { color: #cc0000; font-weight: bold } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0044DD } /* Generic.Traceback */
+.kc { color: #008800; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008800; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008800; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #003388; font-weight: bold } /* Keyword.Pseudo */
+.kr { color: #008800; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #333399; font-weight: bold } /* Keyword.Type */
+.m { color: #6600EE; font-weight: bold } /* Literal.Number */
+.s { background-color: #fff0f0 } /* Literal.String */
+.na { color: #0000CC } /* Name.Attribute */
+.nb { color: #007020 } /* Name.Builtin */
+.nc { color: #BB0066; font-weight: bold } /* Name.Class */
+.no { color: #003366; font-weight: bold } /* Name.Constant */
+.nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.ni { color: #880000; font-weight: bold } /* Name.Entity */
+.ne { color: #FF0000; font-weight: bold } /* Name.Exception */
+.nf { color: #0066BB; font-weight: bold } /* Name.Function */
+.nl { color: #997700; font-weight: bold } /* Name.Label */
+.nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.nt { color: #007700 } /* Name.Tag */
+.nv { color: #996633 } /* Name.Variable */
+.ow { color: #000000; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #6600EE; font-weight: bold } /* Literal.Number.Float */
+.mh { color: #005588; font-weight: bold } /* Literal.Number.Hex */
+.mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
+.mo { color: #4400EE; font-weight: bold } /* Literal.Number.Oct */
+.sb { background-color: #fff0f0 } /* Literal.String.Backtick */
+.sc { color: #0044DD } /* Literal.String.Char */
+.sd { color: #DD4422 } /* Literal.String.Doc */
+.s2 { background-color: #fff0f0 } /* Literal.String.Double */
+.se { color: #666666; font-weight: bold; background-color: #fff0f0 } /* Literal.String.Escape */
+.sh { background-color: #fff0f0 } /* Literal.String.Heredoc */
+.si { background-color: #eeeeee } /* Literal.String.Interpol */
+.sx { color: #DD2200; background-color: #fff0f0 } /* Literal.String.Other */
+.sr { color: #000000; background-color: #fff0ff } /* Literal.String.Regex */
+.s1 { background-color: #fff0f0 } /* Literal.String.Single */
+.ss { color: #AA6600 } /* Literal.String.Symbol */
+.bp { color: #007020 } /* Name.Builtin.Pseudo */
+.vc { color: #336699 } /* Name.Variable.Class */
+.vg { color: #dd7700; font-weight: bold } /* Name.Variable.Global */
+.vi { color: #3333BB } /* Name.Variable.Instance */
+.il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
+			body { width: 1000px; }
+			div.highlight pre { white-space: pre-wrap; width: 1000px; word-wrap: break-word; }
+			span.lineno { color: lightgrey; }
+		</style>
+	</head>
+	<body>
+<h1 style="margin: 5px;">leven-en-laten-sterven.py</h1><table cellspacing="0" cellpadding="10" border="0" style="background: none repeat scroll 0% 0% rgb(221, 221, 221); margin: 5px"><tr><td>Status:</td><td width="500"></td></tr><tr><td>Punten:</td><td width="500"> &nbsp; </td></tr></table><div class="highlight"><pre><span class="lineno"> 1</span> <span class="k">def</span> <span class="nf">paren</span><span class="p">(</span><span class="n">element</span><span class="p">):</span>
+<span class="lineno"> 2</span>     <span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno"> 3</span> <span class="sd">    &gt;&gt;&gt; paren(&#39;Neon&#39;)</span>
+<span class="lineno"> 4</span> <span class="sd">    (&#39;Ne&#39;, &#39;Eo&#39;, &#39;On&#39;)</span>
+<span class="lineno"> 5</span> <span class="sd">    &gt;&gt;&gt; paren(&#39;Rutherfordium&#39;)</span>
+<span class="lineno"> 6</span> <span class="sd">    (&#39;Ru&#39;, &#39;Ut&#39;, &#39;Th&#39;, &#39;He&#39;, &#39;Er&#39;, &#39;Rf&#39;, &#39;Fo&#39;, &#39;Or&#39;, &#39;Rd&#39;, &#39;Di&#39;, &#39;Iu&#39;, &#39;Um&#39;)</span>
+<span class="lineno"> 7</span> <span class="sd">    &#39;&#39;&#39;</span>
+<span class="lineno"> 8</span>     <span class="c">#opbouwen van een tuple en returnen</span>
+<span class="lineno"> 9</span>     <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">+</span> <span class="n">element</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">element</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+<span class="lineno">10</span> 
+<span class="lineno">11</span> <span class="k">def</span> <span class="nf">eerste</span><span class="p">(</span><span class="n">reeks</span><span class="p">,</span> <span class="n">container</span><span class="p">):</span>
+<span class="lineno">12</span>     <span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno">13</span> <span class="sd">    &gt;&gt;&gt; eerste([&#39;Ne&#39;, &#39;Eo&#39;, &#39;On&#39;], {&#39;Ne&#39;, &#39;On&#39;})</span>
+<span class="lineno">14</span> <span class="sd">    &#39;Eo&#39;</span>
+<span class="lineno">15</span> <span class="sd">    &gt;&gt;&gt; eerste((&#39;Ne&#39;, &#39;Eo&#39;, &#39;On&#39;), {&#39;Ne&#39;, &#39;On&#39;, &#39;Eo&#39;})</span>
+<span class="lineno">16</span> <span class="sd">    &#39;&#39;&#39;</span>
+<span class="lineno">17</span>     <span class="c">#vanaf je een element vind dat niet in de container zit, return deze dan</span>
+<span class="lineno">18</span>     <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">reeks</span><span class="p">:</span>
+<span class="lineno">19</span>         <span class="k">if</span> <span class="n">e</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">container</span><span class="p">:</span>
+<span class="lineno">20</span>             <span class="k">return</span> <span class="n">e</span>
+<span class="lineno">21</span> 
+<span class="lineno">22</span> <span class="k">def</span> <span class="nf">toekennen</span><span class="p">(</span><span class="n">bestand</span><span class="p">,</span> <span class="n">onmogelijk</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<span class="lineno">23</span>     <span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno">24</span> <span class="sd">    &gt;&gt;&gt; symbool = toekennen(&#39;elementen.txt&#39;, onmogelijk=&#39;???&#39;)</span>
+<span class="lineno">25</span> <span class="sd">    &gt;&gt;&gt; symbool[&#39;Neon&#39;]</span>
+<span class="lineno">26</span> <span class="sd">    &#39;Ne&#39;</span>
+<span class="lineno">27</span> <span class="sd">    &gt;&gt;&gt; symbool[&#39;Rubidium&#39;]</span>
+<span class="lineno">28</span> <span class="sd">    &#39;Ru&#39;</span>
+<span class="lineno">29</span> <span class="sd">    &gt;&gt;&gt; symbool[&#39;Ruthenium&#39;]</span>
+<span class="lineno">30</span> <span class="sd">    &#39;Ut&#39;</span>
+<span class="lineno">31</span> <span class="sd">    &gt;&gt;&gt; symbool[&#39;Rutherfordium&#39;]</span>
+<span class="lineno">32</span> <span class="sd">    &#39;Rf&#39;</span>
+<span class="lineno">33</span> <span class="sd">    &gt;&gt;&gt; symbool[&#39;Tin&#39;]</span>
+<span class="lineno">34</span> <span class="sd">    &#39;???&#39;</span>
+<span class="lineno">35</span> <span class="sd">    &#39;&#39;&#39;</span>
+<span class="lineno">36</span>     <span class="c">#een lege dict en een lege verz voor de toegekende symbolen aanmaken</span>
+<span class="lineno">37</span>     <span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>                        
+<span class="lineno">38</span>     <span class="n">al_toegekend</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="lineno">39</span>     
+<span class="lineno">40</span>     <span class="n">bestand</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">bestand</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>        
+<span class="lineno">41</span>     
+<span class="lineno">42</span>     <span class="c">#overloop alle elementen in het bestand</span>
+<span class="lineno">43</span>     <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">bestand</span><span class="p">:</span>
+<span class="lineno">44</span>         <span class="n">element</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span> <span class="c">#newlines en spaties weg aan de rechterkant</span>
+<span class="lineno">45</span>         <span class="c">#kies een symbool voor het element  met de functie &#39;eerste&#39;</span>
+<span class="lineno">46</span>         <span class="n">symbool</span> <span class="o">=</span> <span class="n">eerste</span><span class="p">(</span><span class="n">paren</span><span class="p">(</span><span class="n">element</span><span class="p">),</span> <span class="n">al_toegekend</span><span class="p">)</span>
+<span class="lineno">47</span>         <span class="k">if</span> <span class="n">symbool</span><span class="p">:</span> <span class="c">#als de functie &#39;eerste&#39; niet None geeft</span>
+<span class="lineno">48</span>             <span class="n">al_toegekend</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">symbool</span><span class="p">)</span>
+<span class="lineno">49</span>             <span class="n">d</span><span class="p">[</span><span class="n">element</span><span class="p">]</span> <span class="o">=</span> <span class="n">symbool</span>
+<span class="lineno">50</span>         <span class="k">else</span><span class="p">:</span>
+<span class="lineno">51</span>             <span class="n">d</span><span class="p">[</span><span class="n">element</span><span class="p">]</span> <span class="o">=</span> <span class="n">onmogelijk</span>
+<span class="lineno">52</span>             
+<span class="lineno">53</span>     <span class="k">return</span> <span class="n">d</span>
+<span class="lineno">54</span>     
+<span class="lineno">55</span> <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">56</span>     <span class="kn">import</span> <span class="nn">doctest</span>
+<span class="lineno">57</span>     <span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">()</span>
+<span class="lineno">58</span>     
+</pre></div>
+<h1 style="margin: 5px;">toegepaste-scheikunde.py</h1><table cellspacing="0" cellpadding="10" border="0" style="background: none repeat scroll 0% 0% rgb(221, 221, 221); margin: 5px"><tr><td>Status:</td><td width="500"></td></tr><tr><td>Punten:</td><td width="500"> &nbsp; </td></tr></table><div class="highlight"><pre><span class="lineno"> 1</span> <span class="k">def</span> <span class="nf">isGeldig</span><span class="p">(</span><span class="n">symbool</span><span class="p">,</span> <span class="n">element</span><span class="p">,</span> <span class="n">lengte</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<span class="lineno"> 2</span>     <span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno"> 3</span> <span class="sd">    &gt;&gt;&gt; isGeldig(&#39;Zer&#39;, &#39;Zeddemorium&#39;)</span>
+<span class="lineno"> 4</span> <span class="sd">    True</span>
+<span class="lineno"> 5</span> <span class="sd">    &gt;&gt;&gt; isGeldig(&#39;Zer&#39;, &#39;Zeddemorium&#39;, 2)</span>
+<span class="lineno"> 6</span> <span class="sd">    False</span>
+<span class="lineno"> 7</span> <span class="sd">    &gt;&gt;&gt; isGeldig(&#39;di&#39;, &#39;Zeddemorium&#39;)</span>
+<span class="lineno"> 8</span> <span class="sd">    False</span>
+<span class="lineno"> 9</span> <span class="sd">    &#39;&#39;&#39;</span>
+<span class="lineno">10</span>     <span class="c">#Checken van criterium 1</span>
+<span class="lineno">11</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">symbool</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span> <span class="ow">or</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">symbool</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">symbool</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">islower</span><span class="p">()):</span>
+<span class="lineno">12</span>         <span class="k">return</span> <span class="bp">False</span>
+<span class="lineno">13</span>     
+<span class="lineno">14</span>     <span class="c">#Checken van criterium 2</span>
+<span class="lineno">15</span>     <span class="n">element</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="lineno">16</span>     <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">symbool</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span> <span class="c">#overloop de letters in het symbool</span>
+<span class="lineno">17</span>         <span class="n">index</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="lineno">18</span>         <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="c">#als find heeft gefaald (geeft dan -1 terug)</span>
+<span class="lineno">19</span>             <span class="k">return</span> <span class="bp">False</span>
+<span class="lineno">20</span>         <span class="n">element</span> <span class="o">=</span> <span class="n">element</span><span class="p">[</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span> <span class="c">#verkort de string iedere keer na de gevonden letter</span>
+<span class="lineno">21</span>  
+<span class="lineno">22</span>     <span class="c">#evt checken van criterium 3</span>
+<span class="lineno">23</span>     <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">symbool</span><span class="p">)</span> <span class="o">==</span> <span class="n">lengte</span> <span class="k">if</span> <span class="n">lengte</span> <span class="k">else</span> <span class="bp">True</span>
+<span class="lineno">24</span> 
+<span class="lineno">25</span> 
+<span class="lineno">26</span> <span class="k">def</span> <span class="nf">symbolen</span><span class="p">(</span><span class="n">element</span><span class="p">):</span>
+<span class="lineno">27</span>     <span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno">28</span> <span class="sd">    &gt;&gt;&gt; symbolen(&#39;Iron&#39;) == {&#39;Ir&#39;, &#39;Io&#39;, &#39;In&#39;, &#39;Ro&#39;, &#39;Rn&#39;, &#39;On&#39;}</span>
+<span class="lineno">29</span> <span class="sd">    True</span>
+<span class="lineno">30</span> <span class="sd">    &gt;&gt;&gt; symbolen(&#39;Neon&#39;) =={&#39;Eo&#39;, &#39;Nn&#39;, &#39;No&#39;, &#39;En&#39;, &#39;Ne&#39;, &#39;On&#39;}</span>
+<span class="lineno">31</span> <span class="sd">    True</span>
+<span class="lineno">32</span> <span class="sd">    &#39;&#39;&#39;</span>
+<span class="lineno">33</span>     <span class="n">v</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="lineno">34</span>     <span class="c">#neem een letter in het element(behalve de laatste)</span>
+<span class="lineno">35</span>     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">element</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span> 
+<span class="lineno">36</span>         <span class="c">#overloop de rest van de letters na die letter</span>
+<span class="lineno">37</span>         <span class="k">for</span> <span class="n">e2</span> <span class="ow">in</span> <span class="n">element</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:]:</span>
+<span class="lineno">38</span>             <span class="c">#voeg steeds een combinatie toe aan de verzameling</span>
+<span class="lineno">39</span>             <span class="n">v</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">+</span> <span class="n">e2</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+<span class="lineno">40</span>     <span class="k">return</span> <span class="n">v</span>
+<span class="lineno">41</span> 
+<span class="lineno">42</span> <span class="k">def</span> <span class="nf">voorkeur</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">laatste</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<span class="lineno">43</span>     <span class="sd">&#39;&#39;&#39;</span>
+<span class="lineno">44</span> <span class="sd">    &gt;&gt;&gt; voorkeur(&#39;Iron&#39;)</span>
+<span class="lineno">45</span> <span class="sd">    &#39;In&#39;</span>
+<span class="lineno">46</span> <span class="sd">    &gt;&gt;&gt; voorkeur(&#39;Iron&#39;, laatste=True)</span>
+<span class="lineno">47</span> <span class="sd">    &#39;Ro&#39;</span>
+<span class="lineno">48</span> <span class="sd">    &gt;&gt;&gt; voorkeur(&#39;Neon&#39;)</span>
+<span class="lineno">49</span> <span class="sd">    &#39;En&#39;</span>
+<span class="lineno">50</span> <span class="sd">    &gt;&gt;&gt; voorkeur(&#39;Neon&#39;, True)</span>
+<span class="lineno">51</span> <span class="sd">    &#39;On&#39;</span>
+<span class="lineno">52</span> <span class="sd">    &#39;&#39;&#39;</span>
+<span class="lineno">53</span>     <span class="c">#maak een alfabetisch gesorteerde lijst met mogelijke symbolen</span>
+<span class="lineno">54</span>     <span class="n">symbolen_list</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">symbolen</span><span class="p">(</span><span class="n">element</span><span class="p">)))</span>
+<span class="lineno">55</span>     
+<span class="lineno">56</span>     <span class="c">#kies de eerste of de laatste</span>
+<span class="lineno">57</span>     <span class="k">return</span> <span class="n">symbolen_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">laatste</span> <span class="k">else</span> <span class="n">symbolen_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="lineno">58</span> 
+<span class="lineno">59</span> <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="lineno">60</span>     <span class="kn">import</span> <span class="nn">doctest</span>
+<span class="lineno">61</span>     <span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">()</span>
+</pre></div>
